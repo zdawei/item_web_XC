@@ -9,7 +9,7 @@
 ---
 >所需技术以及连接地址
 
-[demo地址](http://weiweicat333.github.io/item_web_XC/index.html)
+[demo地址](http://weiweicat333.github.io/item_web_XC/index.html)  
 [github]( https://github.com/)  
 [sea.js官方文档](http://seajs.org/docs/#intro)  
 [markdown语法](http://sspai.com/25137)  
