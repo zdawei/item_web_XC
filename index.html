@@ -9,18 +9,20 @@
 	<link rel="stylesheet" type="text/css" href="css/indexLogin/index.css">
 </head>
 <body>
-<div class="login" id="login"></div>
+<div class="login"></div>
 <script type="text/javascript" src="./js/lib/sea-debug.js" ></script>
 <script type="text/javascript">
 	// sea.js配置
 	seajs.config({
 		alias: {
-		    'jquery': 'jquery-3.1.1.js',
-		    'bootstrap': 'bootstrap.js'
+		    'jquery' : 'jquery-3.1.1.js',
+		    'bootstrap' : 'bootstrap.js'
 		}
 	});
 	// 加载入口文件
-	seajs.use('./js/pl/init');
+	seajs.use('./js/pl/init', function(init) {
+		init.run();
+	});
 </script>
 </body>
 </html>
