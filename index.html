@@ -5,52 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>寻程PROSPECT</title>
 	<link href="img/icon.ico" rel="shortcut icon" />
-	<style type="text/css">
-	body{
-		margin: 0;
-		height: 100%;
-	}
-	img{
-		border: 0;
-		padding: 0;
-		margin:0;
-		float:left;
-		width:100%;
-		height:100%;
-	}
-	.login{
-		position: absolute;
-		top:20%;
-		width: 60%;
-		height: 100%;
-		left:20%;
-		background-color:rgba(255, 251, 240,0.5);
-	}
-	.loginbtn{
-		position: relative;
-		left:35%;
-		top:40%;
-		margin: 10px;
-		width: 200px;
-		height: 50px;
-		background-color: green;
-	}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/indexLogin/index.css">
 </head>
 <body>
-<img src="img/index.jpg" />
-<div class="login">
-	<button onclick="loginit(1)" class="loginbtn">个人登录</button><br/>
-	<button onclick="loginit(0)" class="loginbtn">企业登录</button>
-</div>
+<div class="login" id="login"></div>
+<script type="text/javascript" src="./js/lib/sea-debug.js" ></script>
 <script type="text/javascript">
-function loginit(a){
-	if(a){
-		window.open("personal/index_start.html","_self");
-	}else{
-		window.open("company/index_start.html","_self");
-	}
-}
+	// sea.js配置
+	seajs.config({
+		alias: {
+		    'jquery': 'jquery-3.1.1.js',
+		    'bootstrap': 'bootstrap.js'
+		}
+	});
+	// 加载入口文件
+	seajs.use('./js/pl/init');
 </script>
 </body>
 </html>

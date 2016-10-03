@@ -1,0 +1,31 @@
+html{
+	height : 100%;
+
+}
+body{
+	background-image: url(../../img/index.jpg);
+  	background-repeat:no-repeat;
+  	background-size:100% 100%;  
+  	height:100%;
+  	position: relative;
+}
+.login{
+	position: absolute;
+	left: 20%;
+	width: 60%;
+	height: 100%;
+	background-color: rgba(255, 251, 240,0.5);
+}
+.selectLogin{
+	position: absolute;
+	left: 20%;
+	top:25%;
+	width: 60%;
+	height: 50%;
+}
+.selectLogin button {
+	width: 100%;
+	height: 20%;
+	margin-bottom: 10%;
+	margin-top: 10%;
+}
