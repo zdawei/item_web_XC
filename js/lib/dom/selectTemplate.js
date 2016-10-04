@@ -59,4 +59,5 @@ define(function(require, exports, module) {
 		}
 		$(css)[method](str + strEnd);
 	};
+
 });
