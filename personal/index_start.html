@@ -11,17 +11,17 @@
 <body>
 	<script type="text/javascript" src="../js/lib/sea-debug.js"></script>
 	<script type="text/javascript">
-	// sea.js配置
-	seajs.config({
-		alias: {
-		    'jq' : 'jquery-3.1.1.js',
-		    'bs' : 'bootstrap.js'
-		}
-	});
-	// 加载入口文件
-	seajs.use('./js/pl/index_start/init', function(init) {
-		init.run();
-	});
-</script>
+		// sea.js配置
+		seajs.config({
+			alias: {
+			    'jq' : 'jquery-3.1.1.js',
+			    'bs' : 'bootstrap.js'
+			}
+		});
+		// 加载入口文件
+		seajs.use('./js/pl/index_start/init', function(init) {
+			init.run();
+		});
+	</script>
 </body>
 </html>
