@@ -15,15 +15,49 @@ body{
 	background-color: rgba(255, 251, 240,0.1);
 }
 .logo_index{
-    width: 25%;
-    height: 18%;
-    position: relative;
-    left: 35%;
-    top: 6%;
+	display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-top: 3%;
 }
 .index-motto{
 	color: white;
-	position: absolute;
-    top: 27%;
-    left: 23%;	
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.login-center{
+	height: 65%;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 2%;
+	background-color: rgba(255, 251, 240,0.3);
+}
+ul.nav>li{
+	width: 50%;
+}
+li>a{
+	color:white;
+	text-align: center;
+}
+.form-horizontal>.form-group{
+	width: 80%;
+	margin-left: 10%;
+}
+.form-group:first-child{
+	margin-top: 10%;
+}
+.form-group>button[type=submit]{
+	width: 100%;
+}
+.login-auto{
+	display: inline-block;
+}
+.login-auto+a{
+	float: right;
 }
