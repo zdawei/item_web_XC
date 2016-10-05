@@ -18,3 +18,7 @@
 ---
 
     目前这个文件结构是，首先进入item_web_XC下的index.html页面，会出现一个选择,个人登录或者是企业登录，如果选择个人登录，会进入personal下得index_start.html页面，如果选择企业登录会进入company下的index_start.html页面，如果进入页面，点击右上角的安全退出按钮，会退出到item_web_XC下的index.html页面。
+
+---
+现在看这个BS框架有点吃力，给我点时间
+---
