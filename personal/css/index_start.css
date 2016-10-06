@@ -61,4 +61,5 @@ li>a{
 .login-auto+a{
 	float: right;
 	color:#333;
+	padding-top: 7px;
 }

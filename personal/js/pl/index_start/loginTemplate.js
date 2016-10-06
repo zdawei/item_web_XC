@@ -59,10 +59,13 @@ define(function(require, exports, module) {
 					'</form>'+
 					'<form class="form-horizontal" role="form" id="registerPerson" style="display:none;">'+
 						'<div class="form-group">'+
-							'<input type="text" class="form-control input-lg" id="account" placeholder="请输入您的手机号/邮箱">'+
+							'<input type="text" class="form-control input-lg" placeholder="请输入您的手机号/邮箱">'+
 						'</div>'+
 						'<div class="form-group">'+
-							'<input type="text" class="form-control input-lg" id="password" placeholder="请输入您的密码">'+
+							'<input type="text" class="form-control input-lg" placeholder="请输入您的密码">'+
+						'</div>'+
+						'<div class="form-group">'+
+							'<input type="text" class="form-control input-lg" placeholder="确认您的密码">'+
 						'</div>'+
 						'<div class="form-group">'+
 						  '<button id="register" type="submit" class="btn btn-success input-lg">注册账户</button>'+
@@ -71,7 +74,7 @@ define(function(require, exports, module) {
 				'</div>'+
 			'</div>'+
 		'</div>'+
-	'</div>' + registerTip;
+	'</div>';
 
 	var addNavEvt = function() {
 		$('#navLogin').on('click', function(evt) {
@@ -96,7 +99,7 @@ define(function(require, exports, module) {
 	};
 
 	exports.addHTML = function(method, css) {
-		$(css)[method](strTemplate);
+		$(css)[method](strTemplate + registerTip);
 		addNavEvt();
 		addSubmitEvt();
 	};
