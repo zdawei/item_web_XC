@@ -1,0 +1,29 @@
+*{margin: 0; padding: 0;}
+body{font:14px/1.5 "微软雅黑";}
+img{border:none;}
+ul,ol{list-style:none;}
+input,select,textarea{outline:none;border:none;background:none;}
+textarea{resize:none;}
+a{text-decoration:none;color:#000 ;}
+.clear{
+	clear:both;
+}
+/*clearfix完整版*/
+
+.clearfix:before,
+.clearfix:after { content:""; display:table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;}
+
+/*去掉a的下划线*/
+a {blr:expression(this.onFocus=this.blur())} /*if IE*/
+a {outline:none;}/*if 火狐等现代浏览器浏览器*/ 
+
+
+/*浮动*/
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
